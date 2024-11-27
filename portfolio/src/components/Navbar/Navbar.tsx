@@ -1,16 +1,18 @@
+import "./Navbar.scss";
+
 export const Navbar = () => {
   return (
     <>
       <div className="nav-container">
         <ul className="nav-items">
           <li className="nav-item">
-            <p>Home</p>
+            <a href="#">Home</a>
           </li>
           <li className="nav-item">
-            <p>About</p>
+            <a href="#">Projects</a>
           </li>
           <li className="nav-item">
-            <p>Contact</p>
+            <a href="#">Contact</a>
           </li>
         </ul>
       </div>
