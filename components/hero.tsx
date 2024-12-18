@@ -6,10 +6,9 @@ import { Button } from "@/components/ui/button"
 import { Github, Instagram, Linkedin, Mail, Send } from 'lucide-react'
 
 const socialLinks = [
-  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-  { href: "https://github.com", icon: Github, label: "GitHub" },
-  { href: "https://instagram.com", icon: Instagram, label: "Instagram" },
-  { href: "mailto:hello@example.com", icon: Mail, label: "Email" },
+  { href: "https://www.linkedin.com/in/xavier-cruz-80085a26b", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://github.com/XavierCruz5106", icon: Github, label: "GitHub" },
+  { href: "mailto:xrcruz244@gmail.com", icon: Mail, label: "Email" },
 ]
 
 const container = {
@@ -37,7 +36,7 @@ export function Hero() {
     >
       <motion.div variants={item} className="mb-8 relative mx-auto h-40 w-40">
         <Image
-          src="/placeholder.svg"
+          src="/headshot.jpg"
           alt="Profile"
           fill
           className="rounded-full object-cover border-4 border-white/20"
@@ -45,16 +44,9 @@ export function Hero() {
       </motion.div>
 
       <motion.div variants={item} className="mb-4 flex items-center justify-center gap-2">
-        <h2 className="text-2xl font-bold text-white">Your Name</h2>
+        <h2 className="text-2xl font-bold text-white">Xavier Cruz</h2>
         <span className="flex items-center gap-1 text-sm text-white/80">
-          <span>Based in Your Location</span>
-          <Image
-            src="/placeholder.svg"
-            alt="Location Flag"
-            width={16}
-            height={12}
-            className="rounded-sm"
-          />
+          <span>Based in Wilmington, DE</span>
         </span>
       </motion.div>
 
@@ -96,4 +88,3 @@ export function Hero() {
     </motion.div>
   )
 }
-
