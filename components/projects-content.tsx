@@ -7,22 +7,33 @@ import { Github, ExternalLink } from 'lucide-react'
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of Project 1 and its key features.",
-    image: "/placeholder.svg",
-    technologies: ["React", "Node.js", "MongoDB"],
-    githubLink: "https://github.com/yourusername/project1",
-    liveLink: "https://project1.com",
+    title: "Code Differently Repository",
+    description: "A collection of projects in Java and TypeScript that emphasize problem-solving, algorithm efficiency, and software development best practices.",
+    image: "/cdRepo.jpg",
+    technologies: ["Java", "TypeScript", "Software Development"],
+    githubLink: "https://github.com/XavierCruz5106/code-differently-24-q4/tree/main",
   },
   {
-    title: "Project 2",
-    description: "An overview of Project 2 and what makes it unique.",
-    image: "/placeholder.svg",
-    technologies: ["Vue.js", "Express", "PostgreSQL"],
-    githubLink: "https://github.com/yourusername/project2",
-    liveLink: "https://project2.com",
+    title: "Vibe Together",
+    description: "A social music app that integrates with the Spotify Web API, enabling users to connect with friends and explore their listening activity in real time.",
+    image: "/vibeTogether.jpg",
+    technologies: ["TypeScript", "NextJs", "Problem Solving"],
+    githubLink: "https://github.com/XavierCruz5106/vibe-together",
   },
-  // Add more projects as needed
+  {
+    title: "Code Differently Capstone",
+    description: "A mock e-commerce site designed to simulate an online shopping experience, featuring product browsing, and a seamless checkout process.",
+    image: "/capstone.jpg",
+    technologies: ["TypeScript", "NextJs", "Collaboration"],
+    githubLink: "https://github.com/XavierCruz5106/24q4-team1/tree/main",
+  },
+  {
+    title: "Weather App",
+    description: "A mock e-commerce site designed to simulate an online shopping experience, featuring product browsing, and a seamless checkout process.",
+    image: "/weatherApp.jpg",
+    technologies: ["HTML5", "CSS", "JavaScript"],
+    githubLink: "https://github.com/XavierCruz5106/24q4-team1/tree/main",
+  },
 ]
 
 export function ProjectsContent() {
@@ -62,16 +73,10 @@ export function ProjectsContent() {
                 ))}
               </div>
               <div className="flex gap-4">
-                <Button asChild variant="outline" size="sm">
+                <Button asChild variant="ghost" size="sm">
                   <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
-                    GitHub
-                  </a>
-                </Button>
-                <Button asChild size="sm">
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
+                    View on GitHub
                   </a>
                 </Button>
               </div>
@@ -82,4 +87,3 @@ export function ProjectsContent() {
     </div>
   )
 }
-

@@ -10,25 +10,43 @@ const experiences = [
   {
     id: 1,
     type: "work",
-    date: "Jan 2022 - Present",
-    company: "Digital Perspective",
-    position: "Frontend Web Developer",
-    description: "Web Design, Web Development, WordPress + Elementor",
-    logo: "/placeholder.svg",
+    date: "June 2024 - August 2024",
+    company: "JPMorgan Chase & Co.",
+    position: "Jr Software Developer Intern",
+    description: "Developed a buy now pay later feature for over 50 million online credit card customers. Built an API to connect 2 disparate systems. Collaborated with cross-functional teams.",
+    logo: "/jpLogo.png",
   },
   {
     id: 2,
     type: "work",
-    date: "Jan 2020 - Mar 2020",
-    company: "Bitcliq",
-    position: "Software Developer - Internship",
-    description: "Full-stack development with React and Node.js",
-    logo: "/placeholder.svg",
+    date: "June 2023 - August 2023",
+    company: "JPMorgan Chase & Co.",
+    position: "Jr Software Developer Intern",
+    description: "Leveraged Java and Kubernetes to build a tool to validate batch credit card and retail payments. Migrated Python batch scripts to Java.",
+    logo: "/jpLogo.png",
+  },
+  {
+    id: 3,
+    type: "education",
+    date: "Sept 2024 - Dec 2024",
+    company: "Code Differently",
+    position: "Software Engineering Bootcamp",
+    description: "Developed high-quality software solutions using Java and TypeScript. Participated in code reviews and worked in an agile team environment.",
+    logo: "/cdLogo.png",
+  },
+  {
+    id: 4,
+    type: "education",
+    date: "Graduated May 2024",
+    company: "Delcastle Technical High School",
+    position: "High School Diploma",
+    description: "Cumulative GPA: 3.9. 1st place SkillsUSA Medal in Computer Science.",
+    logo: "/delcastleLogo.jpg",
   },
 ]
 
 export function Experience() {
-  const [activeTab, setActiveTab] = React.useState<"work" | "studies">("work")
+  const [activeTab, setActiveTab] = React.useState<"work" | "education">("work")
 
   return (
     <section className="mt-32">
@@ -52,14 +70,14 @@ export function Experience() {
           Work
         </Button>
         <Button
-          variant={activeTab === "studies" ? "default" : "ghost"}
-          onClick={() => setActiveTab("studies")}
+          variant={activeTab === "education" ? "default" : "ghost"}
+          onClick={() => setActiveTab("education")}
           className={cn(
             "bg-white/10 text-white hover:bg-white/20",
-            activeTab === "studies" && "bg-white/20"
+            activeTab === "education" && "bg-white/20"
           )}
         >
-          Studies
+          Education
         </Button>
       </div>
 
@@ -99,4 +117,3 @@ export function Experience() {
     </section>
   )
 }
-

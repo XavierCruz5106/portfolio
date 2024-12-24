@@ -3,12 +3,24 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Github, Instagram, Linkedin, Mail, Send } from 'lucide-react'
+import { Github, Linkedin, Mail, Send } from 'lucide-react'
 
 const socialLinks = [
-  { href: "https://www.linkedin.com/in/xavier-cruz-80085a26b", icon: Linkedin, label: "LinkedIn" },
-  { href: "https://github.com/XavierCruz5106", icon: Github, label: "GitHub" },
-  { href: "mailto:xrcruz244@gmail.com", icon: Mail, label: "Email" },
+  {
+    href: "https://www.linkedin.com/in/xavier-cruz-80085a26b/",
+    icon: Linkedin,
+    label: "LinkedIn"
+  },
+  {
+    href: "https://github.com/XavierCruz5106",
+    icon: Github,
+    label: "GitHub"
+  },
+  {
+    href: "mailto:xrcruz244@gmail.com",
+    icon: Mail,
+    label: "Email"
+  },
 ]
 
 const container = {
@@ -37,7 +49,7 @@ export function Hero() {
       <motion.div variants={item} className="mb-8 relative mx-auto h-40 w-40">
         <Image
           src="/headshot.jpg"
-          alt="Profile"
+          alt="Xavier Cruz"
           fill
           className="rounded-full object-cover border-4 border-white/20"
         />
@@ -54,13 +66,17 @@ export function Hero() {
         variants={item}
         className="mb-8 text-7xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
       >
-        FULLSTACK
+        SOFTWARE
         <br />
         DEVELOPER
       </motion.h1>
 
       <motion.div variants={item}>
-        <Button size="lg" className="mb-12 bg-white text-purple-900 hover:bg-purple-100">
+        <Button
+          size="lg"
+          className="mb-12 bg-white text-purple-900 hover:bg-purple-100"
+          onClick={() => window.location.href = 'mailto:xrcruz244@gmail.com'}
+        >
           <Send className="mr-2 h-4 w-4" />
           Contact me
         </Button>
