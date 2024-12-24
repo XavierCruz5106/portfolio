@@ -1,23 +1,23 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { cn } from "@/lib/utils"
-import { motion } from "framer-motion"
+import * as React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
   { href: "/contact", label: "Contact" },
-]
+];
 
-export function NavigationMenu() {
-  const pathname = usePathname()
+export function NavigationMenu({ className }: { className?: string }) {
+  const pathname = usePathname();
 
   return (
-    <nav className="flex justify-center mb-16">
+    <nav className={cn("flex justify-center mb-16", className)}>
       <ul className="flex items-center gap-8">
         {links.map(({ href, label }) => (
           <li key={href}>
@@ -47,6 +47,5 @@ export function NavigationMenu() {
         ))}
       </ul>
     </nav>
-  )
+  );
 }
-

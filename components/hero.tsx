@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link"; // Import Link from next/link
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Send } from "lucide-react";
+import { Github, Linkedin, Mail, Send, Download } from "lucide-react";
 
 const socialLinks = [
   {
@@ -47,7 +47,10 @@ export function Hero() {
       animate="show"
       variants={container}
     >
-      <motion.div variants={item} className="mb-8 relative mx-auto h-40 w-40">
+      <motion.div
+        variants={item}
+        className="mb-8 relative mx-auto h-32 w-32 sm:h-40 sm:w-40"
+      >
         <Image
           src="/headshot.jpg"
           alt="Xavier Cruz"
@@ -58,7 +61,7 @@ export function Hero() {
 
       <motion.div
         variants={item}
-        className="mb-4 flex items-center justify-center gap-2"
+        className="mb-4 flex flex-col sm:flex-row items-center justify-center gap-2"
       >
         <h2 className="text-2xl font-bold text-white">Xavier Cruz</h2>
         <span className="flex items-center gap-1 text-sm text-white/80">
@@ -68,7 +71,7 @@ export function Hero() {
 
       <motion.h1
         variants={item}
-        className="mb-8 text-7xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+        className="mb-8 text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
       >
         FULLSTACK
         <br />
@@ -79,7 +82,7 @@ export function Hero() {
         <Link href="/contact" passHref>
           <Button
             size="lg"
-            className="mb-12 bg-white text-purple-900 hover:bg-purple-100"
+            className="mb-4 bg-white text-purple-900 hover:bg-purple-100 transition-colors duration-300"
           >
             <Send className="mr-2 h-4 w-4" />
             Contact me
@@ -87,9 +90,21 @@ export function Hero() {
         </Link>
       </motion.div>
 
+      <motion.div variants={item}>
+        <a href="/Xavier_Cruz_Resume.pdf" download>
+          <Button
+            size="lg"
+            className="bg-white text-purple-900 hover:bg-purple-100 transition-colors duration-300"
+          >
+            <Download className="mr-2 h-4 w-4" />
+            Download Resume
+          </Button>
+        </a>
+      </motion.div>
+
       <motion.div
         variants={item}
-        className="flex items-center justify-center gap-6"
+        className="flex items-center justify-center gap-6 mt-8"
       >
         {socialLinks.map(({ href, icon: Icon, label }) => (
           <motion.a
@@ -97,12 +112,12 @@ export function Hero() {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/80 hover:text-white transition-colors"
+            className="text-white/80 hover:text-white transition-colors duration-300"
             aria-label={label}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Icon className="h-6 w-6" />
+            <Icon className="h-6 w-6 sm:h-8 sm:w-8" />
           </motion.a>
         ))}
       </motion.div>
