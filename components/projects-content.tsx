@@ -36,10 +36,11 @@ const projects = [
   {
     title: "Weather App",
     description:
-      "A mock e-commerce site designed to simulate an online shopping experience, featuring product browsing, and a seamless checkout process.",
+      "Built a weather app using pure HTML, CSS, and JavaScript, featuring real-time weather data and a clean, user-friendly interface.",
     image: "/weatherApp.jpg",
     technologies: ["HTML5", "CSS", "JavaScript"],
-    githubLink: "https://github.com/XavierCruz5106/24q4-team1/tree/main",
+    githubLink:
+      "https://github.com/XavierCruz5106/weather-app-XavierCruz5106-main",
     deploymentLink: "https://xavier-weather-app.netlify.app/",
   },
 ];

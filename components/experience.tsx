@@ -1,52 +1,68 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { motion } from "framer-motion"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import * as React from "react";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const experiences = [
   {
     id: 1,
     type: "work",
-    date: "June 2024 - August 2024",
-    company: "JPMorgan Chase & Co.",
-    position: "Jr Software Developer Intern",
-    description: "Developed a buy now pay later feature for over 50 million online credit card customers. Built an API to connect 2 disparate systems. Collaborated with cross-functional teams.",
-    logo: "/jpLogo.png",
+    date: "Dec 2024 - Feb 2025",
+    company: "GreenSol",
+    position: "Software Developer",
+    description:
+      "Reduced technical debt, enabling the system to scale efficiently while handling higher traffic loads.",
+    logo: "/greenSolLogo.png",
   },
   {
     id: 2,
     type: "work",
-    date: "June 2023 - August 2023",
+    date: "June 2024 - August 2024",
     company: "JPMorgan Chase & Co.",
     position: "Jr Software Developer Intern",
-    description: "Leveraged Java and Kubernetes to build a tool to validate batch credit card and retail payments. Migrated Python batch scripts to Java.",
+    description:
+      "Developed a buy now pay later feature for over 50 million online credit card customers. Built an API to connect 2 disparate systems. Collaborated with cross-functional teams.",
     logo: "/jpLogo.png",
   },
   {
     id: 3,
-    type: "education",
-    date: "Sept 2024 - Dec 2024",
-    company: "Code Differently",
-    position: "Software Engineering Bootcamp",
-    description: "Developed high-quality software solutions using Java and TypeScript. Participated in code reviews and worked in an agile team environment.",
-    logo: "/cdLogo.png",
+    type: "work",
+    date: "June 2023 - August 2023",
+    company: "JPMorgan Chase & Co.",
+    position: "Jr Software Developer Intern",
+    description:
+      "Leveraged Java and Kubernetes to build a tool to validate batch credit card and retail payments. Migrated Python batch scripts to Java.",
+    logo: "/jpLogo.png",
   },
   {
     id: 4,
     type: "education",
+    date: "Sep 2024 - Feb 2025",
+    company: "Code Differently",
+    position: "Software Engineer",
+    description:
+      "Developed and maintained high-quality software solutions using Java and TypeScript.",
+    logo: "/cdLogo.png",
+  },
+  {
+    id: 5,
+    type: "education",
     date: "Graduated May 2024",
     company: "Delcastle Technical High School",
     position: "High School Diploma",
-    description: "Cumulative GPA: 3.9. 1st place SkillsUSA Medal in Computer Science.",
+    description:
+      "Cumulative GPA: 3.9. 1st place SkillsUSA Medal in Computer Science.",
     logo: "/delcastleLogo.jpg",
   },
-]
+];
 
 export function Experience() {
-  const [activeTab, setActiveTab] = React.useState<"work" | "education">("work")
+  const [activeTab, setActiveTab] = React.useState<"work" | "education">(
+    "work"
+  );
 
   return (
     <section className="mt-32">
@@ -115,5 +131,5 @@ export function Experience() {
           ))}
       </div>
     </section>
-  )
+  );
 }
