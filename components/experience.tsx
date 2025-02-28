@@ -10,7 +10,7 @@ const experiences = [
   {
     id: 1,
     type: "work",
-    date: "Dec 2024 - Feb 2025",
+    date: "Dec 2024 - Present",
     company: "GreenSol",
     position: "Software Developer",
     description:
