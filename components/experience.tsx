@@ -10,6 +10,16 @@ const experiences = [
   {
     id: 1,
     type: "work",
+    date: "Mar 2025 - April 2025",
+    company: "ARplans",
+    position: "Software Developer",
+    description:
+      "Built the ARplans platform from the ground up using Next.js, Node.js, and MongoDB, delivering a scalable full-stack solution in under 3 months.",
+    logo: "/ARplans.jpg",
+  },
+  {
+    id: 2,
+    type: "work",
     date: "Dec 2024 - Present",
     company: "GreenSol",
     position: "Software Developer",
@@ -18,7 +28,7 @@ const experiences = [
     logo: "/greenSolLogo.png",
   },
   {
-    id: 2,
+    id: 3,
     type: "work",
     date: "June 2024 - August 2024",
     company: "JPMorgan Chase & Co.",
@@ -28,7 +38,7 @@ const experiences = [
     logo: "/jpLogo.png",
   },
   {
-    id: 3,
+    id: 4,
     type: "work",
     date: "June 2023 - August 2023",
     company: "JPMorgan Chase & Co.",
@@ -38,7 +48,7 @@ const experiences = [
     logo: "/jpLogo.png",
   },
   {
-    id: 4,
+    id: 5,
     type: "education",
     date: "Sep 2024 - Feb 2025",
     company: "Code Differently",
@@ -48,7 +58,7 @@ const experiences = [
     logo: "/cdLogo.png",
   },
   {
-    id: 5,
+    id: 6,
     type: "education",
     date: "Graduated May 2024",
     company: "Delcastle Technical High School",
