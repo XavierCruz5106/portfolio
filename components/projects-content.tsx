@@ -7,6 +7,15 @@ import { Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Dorm Deals",
+    description:
+      "This app was devloped for a hackathon! Developed a student-focused marketplace platform designed to help college students buy, sell, and discover dorm essentials while reducing waste through the reuse and recycling of secondhand items.",
+    image: "/Dorm Deals.png",
+    technologies: ["React", "TypeScript", "Supabase"],
+    githubLink:
+      "https://github.com/XavierCruz5106/Dorm-Deals",
+  },
+  {
     title: "Code Differently Repository",
     description:
       "A collection of projects in Java and TypeScript that emphasize problem-solving, algorithm efficiency, and software development best practices.",
@@ -42,6 +51,16 @@ const projects = [
     githubLink:
       "https://github.com/XavierCruz5106/weather-app-XavierCruz5106-main",
     deploymentLink: "https://xavier-weather-app.netlify.app/",
+  },
+  {
+    title: "3D Word Cloud",
+    description:
+      "Built a 3D word cloud experiment using Three.js that extracts keywords from an article, assigns them weighted relevance, and visualizes them orbiting a dynamic 3D nucleus in real time. The project was created as a hands-on way to explore Three.js, particle systems, and interactive data visualization on the web.",
+    image: "/3D-Cloud-Home.png",
+    technologies: ["HTML5", "CSS", "TypeScript", "React", "ThreeJS"],
+    githubLink:
+      "https://github.com/XavierCruz5106/3D-Word-Cloud-Xavier",
+    deploymentLink: "3-d-word-cloud-xavier.vercel.app",
   },
 ];
 

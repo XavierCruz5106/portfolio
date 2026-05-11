@@ -10,6 +10,26 @@ const experiences = [
   {
     id: 1,
     type: "work",
+    date: "Sept 2025 - Present",
+    company: "Delaware DTI",
+    position: "Digital Accessibility Apprentice",
+    description:
+      "Designed and implemented a statewide accessibility tracking and reporting system,  standardizing storage, building a centralized remediation tracker, creating Power BI dashboards, automating alerts with Power Automate, and conducting WCAG 2.2 audits to improve agency accessibility compliance and reduce manual monitoring effort.",
+    logo: "/dtiLogo.png",
+  },
+  {
+    id: 2,
+    type: "work",
+    date: "July 2025 - Nov 2025",
+    company: "ChristianaCare",
+    position: "Community Health Intern",
+    description:
+      "Repaired and replaced clinical IT hardware, supported device deployments, and troubleshot system issues to reduce downtime, improve workstation reliability, and ensure smooth IT operations across high-traffic departments.",
+    logo: "/christinacare-logo.png",
+  },
+  {
+    id: 3,
+    type: "work",
     date: "Mar 2025 - April 2025",
     company: "ARplans",
     position: "Software Developer",
@@ -18,7 +38,7 @@ const experiences = [
     logo: "/ARplans.jpg",
   },
   {
-    id: 2,
+    id: 4,
     type: "work",
     date: "Dec 2024 - Present",
     company: "GreenSol",
@@ -28,7 +48,7 @@ const experiences = [
     logo: "/greenSolLogo.png",
   },
   {
-    id: 3,
+    id: 5,
     type: "work",
     date: "June 2024 - August 2024",
     company: "JPMorgan Chase & Co.",
@@ -38,7 +58,7 @@ const experiences = [
     logo: "/jpLogo.png",
   },
   {
-    id: 4,
+    id: 6,
     type: "work",
     date: "June 2023 - August 2023",
     company: "JPMorgan Chase & Co.",
@@ -48,7 +68,7 @@ const experiences = [
     logo: "/jpLogo.png",
   },
   {
-    id: 5,
+    id: 7,
     type: "education",
     date: "Sep 2024 - Feb 2025",
     company: "Code Differently",
@@ -58,7 +78,7 @@ const experiences = [
     logo: "/cdLogo.png",
   },
   {
-    id: 6,
+    id: 8,
     type: "education",
     date: "Graduated May 2024",
     company: "Delcastle Technical High School",
